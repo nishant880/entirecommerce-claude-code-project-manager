@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" font-family="-apple-system, 'Poppins', 'Inter', sans-serif">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="10%" r="70%">
+      <stop offset="0%" stop-color="#75e9d2" stop-opacity="0.10"/>
+      <stop offset="60%" stop-color="#75e9d2" stop-opacity="0.00"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111119"/>
+      <stop offset="100%" stop-color="#0d0d14"/>
+    </linearGradient>
+    <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#75e9d2" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#75e9d2" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="#08080d"/>
+  <rect width="1080" height="1080" fill="url(#bgGlow)"/>
+
+  <!-- Top label -->
+  <text x="540" y="92" text-anchor="middle" fill="#75e9d2" font-size="20" font-weight="600" letter-spacing="4" font-family="'Poppins', sans-serif">FREE FOR CLAUDE CODE USERS</text>
+
+  <!-- Title -->
+  <text x="540" y="166" text-anchor="middle" fill="#ffffff" font-size="66" font-weight="800" font-family="'Montserrat', sans-serif" letter-spacing="-2">Claude Code Project Manager</text>
+
+  <!-- Subtitle -->
+  <text x="540" y="212" text-anchor="middle" fill="#9494ad" font-size="22" font-weight="400">Two markdown files. ICE-scored Kanban. Installed in 30 minutes.</text>
+
+  <!-- Hero / synthesis card: the Recurring + Natural-Language layer -->
+  <g transform="translate(40 252)">
+    <rect width="1000" height="136" rx="16" fill="url(#heroGrad)" stroke="#75e9d2" stroke-width="1.5"/>
+    <text x="32" y="44" fill="#75e9d2" font-size="14" font-weight="700" letter-spacing="3">SYNTHESIS · THE DIFFERENTIATOR</text>
+    <text x="32" y="82" fill="#ffffff" font-size="28" font-weight="700">Recurring tasks compete for P0 on merit</text>
+    <text x="32" y="114" fill="#e4e4ec" font-size="16" font-weight="400">SessionStart hook surfaces overdue work · 5 English phrases run the system · nothing slips silently</text>
+  </g>
+
+  <!-- 8 deliverable cards: 2 cols x 4 rows -->
+  <!-- Card dimensions: w=480 h=128, gap=20, start y=412 -->
+  <!-- Row starts: 412, 556, 700, 844 -->
+
+  <g font-family="'Poppins', sans-serif">
+    <!-- 01 CLAUDE.md -->
+    <g transform="translate(40 412)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">01 · PERSISTENT CONTEXT</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">CLAUDE.md project brief</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">Loads every session · operating rules · wired tools · brand voice</text>
+    </g>
+
+    <!-- 02 actions.md Kanban -->
+    <g transform="translate(560 412)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">02 · SEEDED KANBAN BOARD</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">actions.md with WIP caps</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">P0 ≤ 5 · P1 ≤ 10 · P2 ≤ 15 · blockers auto-promoted</text>
+    </g>
+
+    <!-- 03 Recurring register -->
+    <g transform="translate(40 556)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">03 · RECURRING REGISTER</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">Weekly / monthly / quarterly</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">cadence + last_run · cycles never slip · feeds the P0 triage</text>
+    </g>
+
+    <!-- 04 ec-kanban-core plugin -->
+    <g transform="translate(560 556)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">04 · ec-kanban-core PLUGIN</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">SessionStart hook</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">~200 lines Python · zero deps · surfaces due work at session open</text>
+    </g>
+
+    <!-- 05 Natural-language triggers -->
+    <g transform="translate(40 700)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">05 · ENGLISH TRIGGERS</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">Five phrases run the system</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">what's next · what's due · let's do X · skip X · let's wrap up</text>
+    </g>
+
+    <!-- 06 ICE with weighted effort -->
+    <g transform="translate(560 700)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">06 · ICE SCORING</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">Weighted 80 / 20 effort</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">0.8 × your ease + 0.2 × Claude ease · biases toward leverage</text>
+    </g>
+
+    <!-- 07 Task-owner tags -->
+    <g transform="translate(40 844)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">07 · TASK-OWNER TAGS</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">[Claude] · [You] · [Hybrid]</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">Board stays honest · Claude triages autonomously · you approve</text>
+    </g>
+
+    <!-- 08 Git-backed audit trail -->
+    <g transform="translate(560 844)">
+      <rect width="480" height="128" rx="14" fill="url(#cardGrad)" stroke="#1a1a24" stroke-width="1"/>
+      <text x="24" y="40" fill="#75e9d2" font-size="13" font-weight="700" letter-spacing="3">08 · GIT AUDIT TRAIL</text>
+      <text x="24" y="76" fill="#ffffff" font-size="22" font-weight="600">Every session committed</text>
+      <text x="24" y="108" fill="#9494ad" font-size="15">Completed log + git history · year-end retrospective for free</text>
+    </g>
+  </g>
+
+  <!-- Footer CTA line -->
+  <text x="540" y="1020" text-anchor="middle" fill="#9494ad" font-size="18" font-weight="400" font-family="'Poppins', sans-serif">entirecommerce.ai/playbooks/claude-code-project-manager</text>
+</svg>
